@@ -19,7 +19,7 @@ jobs:
         run: npm test -- --watchAll=false  --passWithNoTests
 
       - name: E2E Tests
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v4 --legacy-peer-deps
         with:
           working-directory: web-ui/
           start: npm start
